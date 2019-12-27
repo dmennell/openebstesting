@@ -1,0 +1,6 @@
+*.tar
+konvoy*
+admin.conf
+.DS*
+runs/
+linux*

@@ -1,0 +1,22 @@
+control-plane:
+  hosts:
+    192.168.2.103:
+    192.168.2.202:
+    192.168.2.203:
+node:
+  hosts:
+    192.168.2.104:
+    192.168.2.105:
+    192.168.2.106:
+    192.168.2.204:
+    192.168.2.205:
+    192.168.2.206:
+bastion: {}
+all:
+  vars:
+    ansible_port: 22
+    ansible_ssh_private_key_file: "/Users/dcmennell/.ssh/dansgenerickey"
+    ansible_user: "dcmennell"
+    control_plane_endpoint: ""
+    order: sorted
+    version: v1beta1
